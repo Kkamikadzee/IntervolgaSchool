@@ -1,0 +1,2520 @@
+﻿<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <title>Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <style>
+        header {
+            background: linear-gradient( 90deg,#ff8e3a,#ffb634, #ffd130);
+            width: 100%;
+            padding: 25px 0 8px;
+            position: static;
+        }
+
+        .nav-link1 {
+            display: block;
+            padding: .5rem 1rem;
+            color: #ffffff;
+            text-decoration: none;
+            transition: color .15s ease-in-out,background-color .15s ease-in-out,border-color .15s ease-in-out;
+        }
+
+        .logo {
+            text-decoration: none;
+        }
+
+        .logo-img {
+            width: 44px;
+            height: 44px;
+            background: url("logo.svg");
+            background-size: contain;
+            display: inline-block;
+            vertical-align: middle;
+            text-decoration: none;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            color: #fff;
+            margin-left: 9px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .jlink {
+            text-decoration: none !important;
+            border-bottom: 1px dashed #fffdfd;
+            margin: 4px 5px;
+            color: #fff;
+            display: inline-block;
+        }
+
+        .search-align {
+            margin: 5% 0 0;
+        }
+
+        .main-menu {
+            margin-bottom: 15px;
+        }
+
+        .nav-link-main {
+            color: #000;
+            font-size: 17px;
+            width: 100%;
+            margin-bottom: 5px;
+            border: 1px solid #e0e0e0;
+            flex-wrap: wrap;
+            max-width: 100%;
+            display: block;
+            padding: .5rem 1rem;
+            text-decoration: none;
+        }
+
+        .back-breadcrumb {
+            margin: 0 1% 0 0;
+        }
+
+        .title {
+            margin-top: 5%;
+        }
+
+        .preview {
+            width: 100%;
+            height: auto;
+        }
+
+        .price {
+            font-size: 22px;
+            color: #000;
+            width: 100%;
+            margin-bottom: 15px;
+            margin-right: 8px;
+        }
+
+        .old-price {
+            font-weight: 400;
+            text-decoration-line: line-through;
+            color: #595959;
+            margin-left: 21px;
+            font-size: .7em;
+        }
+
+        .articul {
+            margin-bottom: 18px;
+            margin-right: 8px;
+            font-weight: 400;
+            font-size: 15px;
+            color: #595959;
+        }
+
+        .product-rating {
+            margin-bottom: 15px;
+            margin-right: 8px;
+            align-items: inherit;
+        }
+
+        .comment-star-group {
+            display: inline-flex;
+        }
+
+        .star.active {
+            background-image: url("star.svg");
+            width: 14px;
+            height: 16px;
+            display: block;
+            background-repeat: no-repeat;
+        }
+
+        .rating-value {
+            margin-left: 8px;
+        }
+
+        .review-count {
+            font-weight: 400;
+            color: #595959;
+            margin-left: 8px;
+        }
+
+        .articul-rating {
+            display: inline-flex;
+        }
+
+        .like {
+            font-size: 14px;
+        }
+
+        .like-icon {
+            background-image: url("prefer-color.svg");
+            width: 27px;
+            display: inline-block;
+            height: 20px;
+            background-repeat: no-repeat;
+            background-size: contain;
+            vertical-align: middle;
+            cursor: pointer;
+        }
+
+        .can-buy {
+            color: #55ad4d;
+            display: flex;
+            align-items: center;
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .buy {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .slick-list {
+            margin-top: 15px;
+            width: 100%;
+        }
+
+        .labels {
+            font-size: 15px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .label-row {
+            flex-basis: 49%;
+            margin-top: 20px;
+        }
+
+        .slider {
+            margin-bottom: 25px;
+            order: 2;
+            max-width: 100%;
+            width: 100%;
+        }
+
+        .slider-text {
+            text-decoration: none;
+        }
+
+        .info-row {
+            margin-top: 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .row-artic-status {
+            margin-top: 10px;
+            display: inline-flex;
+            align-items: center;
+            justify-content: space-between;
+            width: 100%;
+        }
+
+        .item-name {
+            font-weight: 400;
+            font-size: 16px;
+            line-height: 1.1;
+            display: block;
+            flex-grow: 1;
+            min-height: 30px;
+            color: #2ba0b5;
+        }
+
+        .info-buy {
+            margin-top: 5px;
+            justify-content: center;
+            display: flex;
+            align-items: center;
+            flex: 0 0 auto;
+            width: 36%;
+        }
+
+        .img-slider {
+            width: 280px;
+            height: auto;
+        }
+
+        .item-price {
+            font-size: 18px;
+        }
+
+        .item-old-price {
+            font-size: 16px;
+            font-weight: 400;
+            text-decoration-line: line-through;
+            color: #595959;
+            margin-left: 21px;
+        }
+
+        .item-can-buy {
+            color: #55ad4d;
+            display: flex;
+            align-items: center;
+        }
+
+        .item-articul {
+            margin-right: 8px;
+            font-weight: 400;
+            font-size: 15px;
+            color: #595959;
+        }
+
+        .multi-slider {
+            display: flex;
+            margin-left: 13%;
+        }
+
+        .division-slider {
+            padding: 2%;
+        }
+
+        .element-description {
+            margin-bottom: 28px;
+        }
+
+        .element-detail-text {
+            font-weight: 400;
+            line-height: 1.3;
+            transition: .3s;
+            height: auto;
+        }
+
+        .typography p {
+            margin-bottom: 16px;
+            margin-top: 16px;
+        }
+
+        .props-name {
+            color: #595959;
+        }
+
+        .props-value {
+            color: #000;
+            text-align: right;
+        }
+
+        span.dashed {
+            border-bottom: 1px dashed #e0e0e0;
+            flex-grow: 1;
+            margin: 0 50px 10px;
+        }
+
+        .reviews {
+            flex-wrap: wrap;
+            position: relative;
+            margin-top: 3%;
+        }
+
+        .comments-list {
+            max-width: 690px;
+            margin-bottom: 25px;
+        }
+
+        .reviews-head {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .comment {
+            display: flex;
+            border: 2px solid transparent;
+            border-radius: 10px;
+            padding: 8px;
+            flex-wrap: wrap;
+            transition: .3s;
+        }
+
+        .comment-body {
+            font-size: 16px;
+            line-height: 1.3;
+            flex-grow: 1;
+            flex-shrink: 1;
+            width: 78%;
+        }
+
+        .comment-top {
+            margin-top: 15px;
+        }
+
+        .img-comment {
+            height: auto;
+            width: 75px;
+        }
+
+        .comment-date {
+            font-weight: 400;
+            color: #595959;
+        }
+
+        .review-rating {
+            margin-right: 8px;
+            align-items: inherit;
+        }
+
+        .comment-bottom {
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-end;
+            margin-top: 2%;
+        }
+
+        .comment-response {
+            text-decoration-line: underline;
+            color: #ff9139;
+            cursor: pointer;
+        }
+
+        .comment-likes {
+            display: flex;
+        }
+
+        .uplike {
+            margin-right: 20px;
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .comment-new {
+            margin: 2% 4% 2% 4%;
+        }
+
+        .comment-stars {
+            display: flex;
+            align-items: center;
+        }
+
+        .star-dop {
+            margin-left: 2%;
+        }
+
+        .purshased {
+            display: inline-flex;
+            justify-content: space-between;
+            margin: 1%;
+        }
+
+        .add {
+            margin: 2% 0% 0% 0%;
+        }
+
+        .why-block {
+            margin-top: 5%;
+        }
+
+        .why-item {
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            margin-bottom: 10px;
+            flex-direction: column;
+        }
+
+        .flex-center {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            width: 110px;
+            height: 110px;
+            border: 1px solid #d3d3d3;
+            border-radius: 50%;
+        }
+
+        .img-why-scr {
+            width: 70px;
+            height: 70px;
+        }
+
+        .why-text {
+            font-size: 18px;
+            margin-top: 20px;
+            margin-left: 0;
+            text-align: center;
+        }
+
+        .img-holder {
+            position: relative;
+            overflow: hidden !important;
+        }
+
+        .subscribe {
+            text-align: center;
+            color: #fff;
+            padding: 0 37px 20px;
+            border-radius: 15px;
+            background-size: cover;
+            background-position: center;
+        }
+
+            .subscribe .img-content {
+                z-index: -1;
+            }
+
+        .img-content {
+            display: block;
+            height: 0;
+            max-height: 100%;
+            max-width: 100%;
+            min-height: 100%;
+            min-width: 100%;
+            width: 0;
+            margin: auto;
+            padding: 0;
+            border: 0;
+            position: absolute;
+            top: 0;
+            left: 0;
+            bottom: 0;
+            right: 0;
+        }
+
+        .subscribe .head {
+            padding-top: 2%;
+        }
+
+        .sub {
+            flex-direction: column;
+        }
+
+        .button-sub {
+            margin-top: 2%;
+        }
+
+        .oferta {
+            display: block;
+            font-weight: 400;
+            line-height: 1.3;
+            width: 100%;
+            max-width: 460px;
+            margin: 14px auto 0;
+            padding: 0;
+            font-size: 18px;
+            margin: 18px auto 0;
+            padding: 0;
+        }
+
+        .sub-marg {
+            margin-bottom: 4%;
+        }
+
+        footer {
+            width: 100%;
+            background-color: #ffb634;
+            background: linear-gradient( 90deg,#ff8e3a,#ffd130);
+            padding-top: 35px;
+            padding-bottom: 35px;
+            overflow: hidden;
+        }
+
+        .content {
+            width: 100%;
+            max-width: 1300px;
+            padding: 0 10px;
+            margin: 0 auto;
+            overflow: hidden;
+        }
+
+        .footer-top {
+            display: flex;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+
+        .logo {
+            width: auto;
+        }
+
+        .inline-middle {
+            display: inline-block;
+            vertical-align: middle;
+        }
+
+        .logo-img {
+            width: 44px;
+            height: 44px;
+            background: url(logo.svg);
+            background-size: contain;
+        }
+
+        .logo-text {
+            font-size: 24px;
+            color: #fff;
+            margin-left: 9px;
+        }
+
+        .menu {
+            color: #fff;
+            padding: 0;
+            margin: 0;
+            list-style: none;
+            display: inline-flex;
+            justify-content: space-between;
+            width: 72%;
+            align-items: center;
+        }
+
+        .footer-menu {
+            width: 36%;
+            margin-left: 0;
+            margin-top: 3px;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .flex-center-footer {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            flex-shrink: 0;
+            border-radius: 50%;
+        }
+
+        .footer-menu-link {
+            min-width: 70px;
+            margin-bottom: 15px;
+            width: 49%;
+            text-decoration: none;
+            color: #fff;
+        }
+
+        .contacts-block {
+            width: 40%;
+            display: flex;
+        }
+
+        .phones {
+            width: 200px;
+            margin-top: 0;
+            margin-right: 21px;
+            flex-direction: column;
+            display: flex;
+        }
+
+        .footer-top .icon {
+            width: 30px;
+            height: 35px;
+            flex-shrink: 0;
+            display: inline-block;
+        }
+
+        .phones-img {
+            background: url(sprites.svg) no-repeat 0 -220px;
+            background-size: 109%;
+        }
+
+        .phone-block .phone {
+            display: block;
+            font-size: 16px;
+            line-height: 28px;
+            text-align: justify;
+            margin-left: 17px;
+            color: #fff;
+        }
+
+        address {
+            margin: 0;
+            width: 50%;
+            display: flex;
+        }
+
+        .address {
+            background: url(sprites.svg) no-repeat 0 -186px;
+            background-size: 109%;
+        }
+
+        .place {
+            color: #fff;
+            margin-left: 15px;
+            font-size: 16px;
+            line-height: 21px;
+            width: auto;
+        }
+
+        .footer-bottom {
+            padding-bottom: 100px;
+            margin-top: 40px;
+            align-items: center;
+            justify-content: flex-start;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .copyright {
+            text-align: justify;
+            color: #fff;
+            opacity: .5;
+            width: 50%;
+            margin-left: 0;
+            max-width: 540px;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .delivery {
+            width: 35%;
+            margin: 0;
+            min-width: 345px;
+            display: flex;
+        }
+
+        .delivery-link {
+            margin-right: 34px;
+        }
+
+        .social.desktop {
+            display: flex;
+        }
+
+        .social-link {
+            width: 40px;
+            margin-left: 0;
+        }
+
+        .props-row {
+            display: flex;
+        }
+
+        .photo-product-size {
+            max-width: 230px;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+        }
+
+        .second-photo {
+            order: 3;
+        }
+
+        .second-slider {
+            justify-content: space-between;
+            display: flex;
+            flex-wrap: wrap;
+        }
+
+        .slide-item {
+            margin-bottom: 20px;
+            width: 220px;
+            position: relative;
+            border-radius: 15px;
+            overflow: hidden;
+            border: 4px solid transparent;
+            display: block;
+            cursor: pointer;
+        }
+
+        .second-slider .slide-img-sizer {
+            padding-bottom: 72%;
+        }
+
+        .slide-img {
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: 0;
+            z-index: 1;
+            position: absolute;
+            width: 100%;
+            height: auto;
+        }
+
+        .stick {
+            position: absolute;
+            z-index: 3;
+            display: flex;
+            flex-direction: column;
+            align-items: stretch;
+        }
+
+        .stick.left {
+            top: 0;
+            left: -10px;
+            width: 25%;
+            max-width: 100px;
+        }
+
+        .rg_shild-img {
+            width: 100%;
+            height: auto;
+        }
+
+        .stick.right {
+            top: 10px;
+            right: -10px;
+        }
+
+        .stick span {
+            text-transform: uppercase;
+            color: #fff;
+            display: block;
+            margin-bottom: 5px;
+            line-height: 1;
+            text-align: center;
+        }
+
+        .top {
+            font-size: 1.3em;
+            padding: .2em .7em .1em;
+            border-radius: 12px;
+            background-color: #55ad4d;
+        }
+
+        .sale {
+            font-size: 1.3em;
+            padding: .2em .7em .1em;
+            border-radius: 12px;
+            background-color: #ff5c30;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="top-menu">
+            <div class="container">
+                <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                        <ul class="nav">
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">О нас</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">Контакты</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">Оплата и доставка</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">Гарантия на растения</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">Отзывы</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link1" href="#">Получить скидку</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <div class="d-flex">
+                            <button type="button" class="btn btn-outline-light">СПЕЦАКЦИЯ</button>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="search-menu">
+            <div class="container">
+                <ul class="nav justify-content-between">
+                    <li class="nav-item">
+                        <a class="logo" href="/">
+                            <span class="logo-img"></span>
+                            <span class="logo-text">ВЕСНА<br>ОСЕНЬ</span>
+                        </a>
+                    </li>
+                    <li class="nav-item">
+                        <div class="search-align">
+                            <form class="row g-2">
+                                <div class="col-auto">
+                                    <input class="form-control mr-sm-2" type="search" placeholder="Search" aria-label="Search">
+                                </div>
+                                <div class="col-auto">
+                                    <button class="btn btn-outline-light my-2 my-sm-0" type="submit">Поиск...</button>
+                                </div>
+                            </form>
+                        </div>
+                    </li>
+                    <div class="d-flex">
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Войти</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Корзина</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+        </div>
+        <ul class="nav justify-content-center">
+            <li class="nav-item">
+                <a class="jlink" href="https://vesna-osen.ru/catalog/ctg/vinograd/">
+                    саженцы винограда
+                </a>
+                <a class="jlink" href="https://vesna-osen.ru/catalog/ctg/vishnya/">
+                    саженец вишни
+                </a>
+            </li>
+        </ul>
+    </header>
+    <main>
+        <section class="main-menu">
+            <div class="main-menu">
+                <div class="container">
+                    <ul class="nav ">
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Плодовые</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Ягодные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Декоративные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Луковицы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Колоновидные</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Розы</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Клубника</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Виноград</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Гортензия</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link-main" href="#">Акции</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="container">
+                <nav aria-label="breadcrumb">
+                    <ol class="breadcrumb">
+                        <li class="back-breadcrumb"><button type="button" class="btn btn-outline-success">Назад</button></li>
+                        <li class="breadcrumb-item"><a href="#">Главная страница</a></li>
+                        <li class="breadcrumb-item active" aria-current="page">Саженцы ягодных кустарников</li>
+                        <li class="breadcrumb-item active" aria-current="page">Саженцы мини-киви (актинидия)</li>
+                    </ol>
+                </nav>
+            </div>
+        </section>
+
+        <section class="element">
+            <div class="content">
+                <div class="container">
+                    <h1 class="title">Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</h1>
+                    <div class="carousel slide" data-ride="carousel">
+                        <div class="row">
+                            <div class="col-12 col-md-1">
+                                <img src="bb8108e57db1dc40aac6a6b027906833.jpeg" class="preview">
+                            </div>
+                            <div class="col-12 col-md-6">
+                                <div class="carousel-inner">
+                                    <div class="stick left">
+                                        <img class="rg_shild-img" src="rs4jdszxb6p8zo45xulujamdxdu53ng6.png">
+                                    </div>
+                                    <div class="stick right">
+                                        <span class="top">ТОП</span>
+                                        <span class="sale">Скидка</span>
+                                    </div>
+                                    <div class="carousel-item active">
+                                        <img class="d-block w-100" src="bb8108e57db1dc40aac6a6b027906833.jpeg">
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-12 col-md-5">
+                                <div class="price-line">
+                                    <div class="price" id="808_price">
+                                        310.25 ₽
+                                        <span class="old-price" id="808_old_price">365 ₽</span>
+                                    </div>
+                                    <div class="articul-rating">
+                                        <div class="articul">Артикул: <span class="value">1755</span></div>
+                                        <div class="product-rating">
+                                            <span class="comment-star-group">
+                                                <span class="star active" data-id="1"></span>
+                                                <span class="star active" data-id="2"></span>
+                                                <span class="star active" data-id="3"></span>
+                                                <span class="star active" data-id="4"></span>
+                                                <span class="star active" data-id="5"></span>
+                                            </span>
+                                            <span class="rating-value">5</span><span class="review-count">(1 отзывов)</span>
+                                        </div>
+                                        <div class="like-block">
+                                            <span class="like"><span class="like-icon" data-id="808"></span>Нравится <span class="count">4</span> чел.</span>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="can-buy">
+                                    <img src="can-buy.svg"><span>В наличии.</span>
+                                </div>
+                                <form class="buy">
+                                    <div class="row">
+                                        <div class="col-12 col-md-4">
+                                            <div class="input-group">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input id="calc" type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                        </div>
+                                        <div class="col-12 col-md-8">
+                                            <button type="button" class="btn btn-warning">Купить</button>
+                                        </div>
+                                    </div>
+                                </form>
+                                <div class="slick-list">
+                                    <ul class="nav">
+                                        <li class="nav-item">
+                                            <a class="nav-link-main">Болезнеустойчивый</a>
+                                        </li>
+                                        <li class="nav-item">
+                                            <a class="nav-link-main">Высокоурожайный</a>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="labels">
+                                    <div class="container">
+                                        <div class="row row-cols-auto">
+                                            <div class="label-row">Гарантированная доставка в сроки</div>
+                                            <div class="label-row">Абсолютное соответствие с описанием</div>
+                                            <div class="label-row">Только широко известные сорта</div>
+                                            <div class="label-row">Достойная упаковка с надлежащей маркировкой</div>
+                                            <div class="label-row">Проверка каждого растения специалистами</div>
+                                            <div class="label-row">Разнообразность выбора от классики до экзотики</div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <h1 class="title">Топ продаж</h1>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/89bf32e5af0789cda0f74442fc4f4b14.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/27dfc5a4b3e5c8a3eb4bd48f02283353.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Бабье лето" (ремонтантная) красная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8e3967eb8ca1253142fa1dd8752a00d9.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Опылитель" (мини-киви) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/8b0fad9343845f75f4b8aee03149bf32.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Вима Занта" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/01b01f5893e7fa125f66c6a863ba18bb.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Смородина "Джонкер Ван Тетс" (Йонкер ван Тетс) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8136d079635f33d5e22ed89709922a51.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Пшехиба" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/3454f97797ff4e4e32bc59b96c756e8d.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Голубика (садовая черника) "Спартан" фиолетовая 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/a3efd86f33133dd7d9c6bdeb48c8fec5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Канадская" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/eb6419b341d20f3f6b01e8c10a650cc5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Королева Елизавета 2" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="description">
+            <div class="container">
+                <div class="row">
+                    <div class="col">
+                        <div class="element-description">
+                            <h1>Описание</h1>
+                            <div class="element-detail-text typography">
+                                <b>Актинидия "Пурпурная" (мини-киви)</b>
+                                <p>Актинидия "Пурпурная" (мини-киви) – это тропическое растение-лиана, относится к разновидности актинидии аргута. Это самые морозоустойчивые культуры, способны расти и плодоносить в каждом регионе России. Для выращивания в южных регионах можно выбрать актинидию китайскую. Она отличается крупными плодами и также представлена в нашем магазине.</p>
+                                <p>Актинидия ценится за вкусные и полезные ягоды, декоративность, неприхотливость. Растение используют для вертикального озеленения, создания живых изгородей, для оформления беседок.</p>
+                                <b>Особенности культуры</b>
+                                <p>Актинидия "Пурпурная" (мини-киви) – это древовидная лиана, имеет высокую силу роста, хорошо приспосабливаются на новом месте. Длина лиан достигает 8 метров, они густо покрыты эллиптическими листьями.</p>
+                                <p>Цветение начинается в конце мая. При этом на побегах распускаются белые, ароматные бутоны. Для образования завязей необходимо иметь на участке женское и мужское растение.</p>
+                                <p>
+                                    Ягоды созревают в конце сентября, они характеризуются:
+                                </p><ul>
+                                    <li>весом до 11 г;</li>
+                                    <li>овальной формой;</li>
+                                    <li>темно-пурпурной окраской; </li>
+                                    <li>тонкой кожицей;</li>
+                                    <li>сочной мякотью с мелкими семенами;</li>
+                                    <li>ананасным ароматом;</li>
+                                    <li>кисло-сладким вкусом.</li>
+                                </ul><p></p>
+                                <p>Урожайность сорта составляет до 12 кг с одного куста. Созревание плодов неравномерное, после созревания они не осыпаются. Если существует угроза ранних заморозков, лучше снять ягоды одновременно, и оставить их для дозревания при комнатной температуре.</p>
+                                <b>Выращивание и уход</b>
+                                <p>Саженцы актинидии "Пурпурная" (мини-киви) неприхотливы, для получения высокого урожая рекомендуются посадка на солнечном месте с плодородной почвой.</p>
+                                <p>
+                                    Уход при выращивании включает стандартную агротехнику:
+                                </p><ul>
+                                    <li>полив; </li>
+                                    <li>подкормку;</li>
+                                    <li>обрезку.</li>
+                                </ul><p></p>
+                                <p>Морозоустойчивость сорта составляет до -30 градусов, при выращивании в серверных регионах требуется защита от мороза.</p>
+                                <p>В нашем магазине можно купить саженцы актинидии "Пурпурная" (мини-киви) высокого качества по доступной цене. На сайте представлен большой выбор сортов с описанием, фото.</p>
+                                <p>Доставка в Москву, остальные города и областные центры России: Ростов, Краснодар, Ставрополь, Санкт-Петербург, Самару, Нижний Новгород, Воронеж, Волгоград и др. производится транспортной компанией.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div class="element-props">
+                            <h1>Характеристики</h1>
+                            <div class="props-row">
+                                <span class="props-name">Рост взрослого растения</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">от 3.0м до 4.0м</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Цвет растения</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Зеленый</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Период цветения</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">июнь</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Тип использования</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">В свежем виде, На компот и варенье, На сок</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Цвет цветка</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Белый</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Цвет плода</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Пурпурный</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Период доставки</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">с февраля по май, с сентября по ноябрь</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Уровень полива</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">2</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Уровень сложности ухода</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">2</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Расстояние при посадке</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">2-3м</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Тип климата</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Мягкий климат, Умеренный климат, Подходит для высадки на юге</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Тип почвы</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Глина, Песок, Кислая почва, Чернозем</span>
+                            </div>
+                            <div class="props-row">
+                                <span class="props-name">Солнечный свет</span>
+                                <span class="dashed"></span>
+                                <span class="props-value">Растет в полутени;Рекомендуется светлая сторона</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <h1 class="title">Топ продаж</h1>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/89bf32e5af0789cda0f74442fc4f4b14.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/27dfc5a4b3e5c8a3eb4bd48f02283353.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Бабье лето" (ремонтантная) красная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8e3967eb8ca1253142fa1dd8752a00d9.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Опылитель" (мини-киви) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/8b0fad9343845f75f4b8aee03149bf32.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Вима Занта" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/01b01f5893e7fa125f66c6a863ba18bb.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Смородина "Джонкер Ван Тетс" (Йонкер ван Тетс) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8136d079635f33d5e22ed89709922a51.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Пшехиба" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/3454f97797ff4e4e32bc59b96c756e8d.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Голубика (садовая черника) "Спартан" фиолетовая 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/a3efd86f33133dd7d9c6bdeb48c8fec5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Канадская" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/eb6419b341d20f3f6b01e8c10a650cc5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Королева Елизавета 2" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="photo">
+            <div class="second-photo">
+                <div class="container">
+                    <h1>Фото товара</h1>
+                    <ul class="second-slider">
+                        <li class="slide-item one-slide"><div class="slide-img-sizer"></div><img class="slide-img" src="slider/89bf32e5af0789cda0f74442fc4f4b14.jpeg"></li>
+                    </ul>
+                </div>
+            </div>
+        </section>
+
+        <section class="review">
+            <div class="container">
+                <div class="reviews">
+                    <div class="row">
+                        <div class="col">
+                            <div class="reviews-head">
+                                <p class="h1">Отзывы о растении</p>
+                            </div>
+                            <div class="comments-list">
+                                <div class="comment">
+                                    <div class="comment-body">
+                                        <div class="row">
+                                            <div class="col col-lg-2">
+                                                <div class="comment-avatar">
+                                                    <img src="no_photo.png" class="img-comment">
+                                                </div>
+                                            </div>
+                                            <div class="col">
+                                                <div class="comment-top">
+                                                    <div class="comment-user">
+                                                        <div class="comment-name">Мария </div>
+                                                        <div class="comment-stars">
+                                                            <div class="review-rating">
+                                                                <span class="comment-star-group">
+                                                                    <span class="star active" data-id="1"></span>
+                                                                    <span class="star active" data-id="2"></span>
+                                                                    <span class="star active" data-id="3"></span>
+                                                                    <span class="star active" data-id="4"></span>
+                                                                    <span class="star active" data-id="5"></span>
+                                                                </span>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                    <div class="comment-date">2021-07-17 11:19:46</div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="comment-text">Не первый раз здесь заказываю. Порадовало то, что растения хорошо упакованы и быстро доходят. Такую диковинку решили заказать в Подмосковье на свой страх и риск, но оказалось, что морозостойкость у многих сортов актинидии сортов приличная даже для центральной России. Посмотрим что будет весной. </div>
+                                        <div class="comment-bottom">
+                                            <div class="comment-action">
+                                                <span data-id="2248" class="comment-response">Ответить</span>
+                                            </div>
+                                            <div class="comment-likes">
+                                                <div class="uplike">
+                                                    <span class="like-img">
+                                                        <img src="like.svg">
+                                                    </span>
+                                                    <span class="like-num">0</span>
+                                                </div>
+                                                <div class="dislike  inline-middle">
+                                                    <span class="like-img">
+                                                        <img src="dislike.svg">
+                                                    </span>
+                                                    <span class="like-num">0</span>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col">
+                            <div class="comments-back">
+                                <form>
+                                    <div class="border border-1 rounded">
+                                        <div class="comment-new">
+                                            <h2>Оставить отзыв</h2>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-14">
+                                                    <input type="email" class="form-control rounded-pill" placeholder="Имя">
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="col-sm-14">
+                                                    <input type="password" class="form-control rounded-pill" placeholder="E-mail">
+                                                </div>
+                                            </div>
+                                            <div class="comment-stars">
+                                                <h3>Оценка товара:</h3>
+                                                <div class="comment-star-group star-dop">
+                                                    <input type="hidden" id="jstar" name="RATING" value="5">
+                                                    <span class="star active" data-id="1"></span>
+                                                    <span class="star active" data-id="2"></span>
+                                                    <span class="star active" data-id="3"></span>
+                                                    <span class="star active" data-id="4"></span>
+                                                    <span class="star active" data-id="5"></span>
+                                                </div>
+                                            </div>
+                                            <div class="row mb-3">
+                                                <div class="purshased">
+                                                    <h5>Вы уже купили данный товар? </h5>
+                                                    <span class="check-yes">
+                                                        <input type="checkbox" name="PURCHASED" class="purchased"> - Да.
+                                                    </span>
+                                                </div>
+                                                <textarea class="text decorated rounded-pill" placeholder="Текст отзыва" name="TEXT" maxlength="500"></textarea>
+                                                <button class="btn btn-primary btn-light rounded-pill add" type="button">Добавить фото</button>
+                                                <button class="btn btn-primary btn-warning rounded-pill add" type="button">Добавить отзыв</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <h1 class="title">Покупают сейчас</h1>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/89bf32e5af0789cda0f74442fc4f4b14.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/27dfc5a4b3e5c8a3eb4bd48f02283353.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Бабье лето" (ремонтантная) красная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8e3967eb8ca1253142fa1dd8752a00d9.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Опылитель" (мини-киви) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/8b0fad9343845f75f4b8aee03149bf32.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Вима Занта" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/01b01f5893e7fa125f66c6a863ba18bb.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Смородина "Джонкер Ван Тетс" (Йонкер ван Тетс) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8136d079635f33d5e22ed89709922a51.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Пшехиба" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/3454f97797ff4e4e32bc59b96c756e8d.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Голубика (садовая черника) "Спартан" фиолетовая 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/a3efd86f33133dd7d9c6bdeb48c8fec5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Канадская" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/eb6419b341d20f3f6b01e8c10a650cc5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Королева Елизавета 2" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="why">
+            <div class="container">
+                <p class="h2">Почему нас выбирают</p>
+                <div class="why-block">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col">
+                                <div class="why-item">
+                                    <div class="flex-center">
+                                        <img class="img-why-scr" src="img1.svg">
+                                    </div>
+                                    <div class="why-text">Выращивание растений в лучших питомниках</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="why-item">
+                                    <div class="flex-center">
+                                        <img class="img-why-scr" src="img2.svg">
+                                    </div>
+                                    <div class="why-text">Достойный внешний вид упаковки и саженцев</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="why-item">
+                                    <div class="flex-center">
+                                        <img class="img-why-scr" src="click.svg">
+                                    </div>
+                                    <div class="why-text">Большой выбор популярных сортов</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="why-item">
+                                    <div class="flex-center">
+                                        <img class="img-why-scr" src="shield.svg">
+                                    </div>
+                                    <div class="why-text">Контроль качества и сортового соответствия каждого растения</div>
+                                </div>
+                            </div>
+                            <div class="col">
+                                <div class="why-item">
+                                    <div class="flex-center">
+                                        <img class="img-why-scr" src="truck.svg">
+                                    </div>
+                                    <div class="why-text">Надежная доставка в указанные сроки</div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="slider">
+            <div class="container">
+                <h1 class="title">Просмотренные товары</h1>
+                <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/89bf32e5af0789cda0f74442fc4f4b14.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Пурпурная" (мини-киви) пурпурная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/27dfc5a4b3e5c8a3eb4bd48f02283353.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Бабье лето" (ремонтантная) красная 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8e3967eb8ca1253142fa1dd8752a00d9.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Актинидия "Опылитель" (мини-киви) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/8b0fad9343845f75f4b8aee03149bf32.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Вима Занта" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/01b01f5893e7fa125f66c6a863ba18bb.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Смородина "Джонкер Ван Тетс" (Йонкер ван Тетс) 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/8136d079635f33d5e22ed89709922a51.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Пшехиба" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="carousel-item">
+                            <div class="multi-slider">
+                                <div class="division-slider">
+                                    <img src="slider/3454f97797ff4e4e32bc59b96c756e8d.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Голубика (садовая черника) "Спартан" фиолетовая 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/a3efd86f33133dd7d9c6bdeb48c8fec5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Малина "Канадская" 1 саженец</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="division-slider">
+                                    <img src="slider/eb6419b341d20f3f6b01e8c10a650cc5.jpeg" class="img-slider">
+                                    <div class="product-item slick-slide slick-current slick-active" style="width: 280px;">
+                                        <a class="slider-text" href="/">
+                                            <div class="info-row">
+                                                <span class="item-name">Клубника "Королева Елизавета 2" 5шт</span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-articul">1755</span>
+                                                <span class="item-can-buy"><img width="15" height="15" src="can-buy.svg"><span>В наличии.</span></span>
+                                            </div>
+                                            <div class="info-row">
+                                                <span class="item-price">310.25 ₽<span class="item-old-price">365 ₽</span></span>
+                                            </div>
+                                        </a>
+                                        <div class="info-row">
+                                            <div class="info-buy">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">-</button>
+                                                </span>
+                                                <input type="text" class="form-control" value="1">
+                                                <span class="input-group-btn">
+                                                    <button type="button" class="btn btn-outline-secondary">+</button>
+                                                </span>
+                                            </div>
+                                            <button type="button" class="btn btn-warning rounded-pill">Купить</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+                        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+                        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container sub-marg">
+                <div class="subscribe img-holder">
+                    <div class="img-content">
+                        <img src="image6.jpg">
+                    </div>
+                    <div class="head">
+                        <h2>Сегодня Ваш день!</h2>
+                        <h2>Даём скидку -25%</h2>
+                        <h3>Станьте подписчиком уже сейчас и сэкономьте на первом заказе</h3>
+                    </div>
+                    <div class="sub">
+                        <div>
+                            <input class="col-sm-5 col-form-label rounded-pill" placeholder="E-mail">
+                        </div>
+                        <div class="button-sub">
+                            <button class="btn btn-warning rounded-pill">подписаться</button>
+                        </div>
+                    </div>
+                    <span class="oferta">Я <a href="#" class="link-warning">соглашаюсь</a> на обработку персональных данных</span>
+                    <span class="oferta">Акция действует для новых клиентов после подписки на эмейл рассылки, при оформлении заказа до 2500 руб</span>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+        <div class="content">
+            <div class="footer-top">
+                <a class="logo inline-middle" href="/">
+                    <span class="logo-img inline-middle"></span>
+                    <span class="logo-text inline-middle">ВЕСНА<br>ОСЕНЬ</span>
+                </a> 
+                <div class="menu footer-menu">
+                    <a class="footer-menu-link" href="/about/">О нас</a>
+                    <a class="footer-menu-link" href="/about/contacts/">Контакты</a>
+                    <a class="footer-menu-link" href="/about/payments-and-deliveries/">Оплата и доставка</a>
+                    <a class="footer-menu-link" href="/about/guarantee/">Гарантия на растения</a>
+                    <a class="footer-menu-link" href="/blog/">Статьи</a>
+                    <a class="footer-menu-link" href="/about/review/">Отзывы</a>
+                </div>
+                <div class="contacts-block">
+                    <div class="phones">
+                        <div class="flex-center-footer">
+                            <span class="phones-img icon"></span>
+                            <span class="phone-block"><a href="tel:+74955101963" class="phone">+7 495 510 19 63</a></span>
+                        </div>
+                    </div>
+                    <address>
+                        <span class="address icon"></span>
+                        <span class="place">Магазин "Растения для Вашего огорода и сада" Россия, г. Краснодар 350056</span>
+                    </address>
+                </div>
+            </div>
+            <div class="footer-bottom margin">
+                <div class="copyright">
+                    <span>Vesna-Osen.</span>
+                    <span>Copyright © 2021.</span>
+                    <span> Все права защищены</span>
+                </div>
+                <div class="delivery">
+                    <a class="delivery-link" href="/about/payments-and-deliveries/#delivery"><img width="83" height="40" src="rupost.png"></a>
+                    <a class="delivery-link" href="/about/payments-and-deliveries/#delivery"><img width="187" height="40" src="boxberry.png"></a>
+                </div>
+                <div class="social desktop">
+                    <a class="social-link"><img src="fb.svg"></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+    
+</body>
+</html>
