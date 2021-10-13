@@ -1,8 +1,8 @@
 POST / HTTP/1.1
 Host: volgu.ivdev.ru
 Content-Type: application/x-www-form-urlencoded
-Content-Length: 23
+Content-Length: 28
 
 group=PMIm-201&name=Petrenko
-X-Intervolga-1: 167e859d4dc13c75310a0ccef21f1926
-X-Intervolga-2: 945195e6b0b9374f3008cde33253b2d0
+X-Intervolga-1: 2a7599073b2a427e2b3d970af848a398
+X-Intervolga-2: 91b8b784f8af9ef62a67ce2e7f9ea498
