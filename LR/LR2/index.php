@@ -19,16 +19,16 @@
             <h5>По цене</h5>
             <div class="my-3">            
                 <input class="form-control" type="number" placeholder="Цена от" aria-label="default input example" name="priceMinFilter"
-                    value="<?php if(isset($_GET['priceMinFilter'])){ echo $_GET['priceMinFilter']; } ?>">
+                    value="<?php if(isset($_GET['priceMinFilter'])){ echo htmlspecialchars($_GET['priceMinFilter']); } ?>">
             </div>
             <div class="my-3">
                 <input class="form-control" type="number" placeholder="Цена до" aria-label="default input example" name="priceMaxFilter"
-                    value="<?php if(isset($_GET['priceMaxFilter'])){ echo $_GET['priceMaxFilter']; } ?>">
+                    value="<?php if(isset($_GET['priceMaxFilter'])){ echo htmlspecialchars($_GET['priceMaxFilter']); } ?>">
             </div>              
             <h5>Фильтрация по типу поля</h5>
             <div class="my-3">
                 <select class="form-select form-select" aria-label=".form-select-sm example" name="fieldFilter"
-                    value="<?php if(isset($_GET['fieldFilter'])){ echo $_GET['fieldFilter']; } ?>">
+                    value="<?php if(isset($_GET['fieldFilter'])){ echo htmlspecialchars($_GET['fieldFilter']); } ?>">
                     <option selected></option>
                     <?php
                         $fields = (new FieldsTable())->getFields();
@@ -45,12 +45,12 @@
             <h5>Фильтрация по описанию</h5>
             <div class="my-3">            
                 <textarea class="form-control" rows="3" placeholder="Введите описание товара" 
-                name="descriptionFilter"><?php if(isset($_GET['descriptionFilter'])){ echo $_GET['descriptionFilter']; }?></textarea>
+                name="descriptionFilter"><?php if(isset($_GET['descriptionFilter'])){ echo htmlspecialchars($_GET['descriptionFilter']); }?></textarea>
             </div>
             <h5>Фильтрация по наименованию</h5>
             <div class="my-3">   
                 <input class="form-control" type="text" placeholder="Введите наименование товара" aria-label="default input example" name="nameFilter"
-                    value="<?php if(isset($_GET['nameFilter'])){ echo $_GET['nameFilter']; } ?>">
+                    value="<?php if(isset($_GET['nameFilter'])){ echo htmlspecialchars($_GET['nameFilter']); } ?>">
             </div>
             <div class="my-3 d-grid gap-2 col-6 mx-auto">
                 <button class="btn btn-primary btn-warning rounded-pill add" type="submit">Применить фильтр</button>
