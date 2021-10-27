@@ -7,7 +7,6 @@
     }
     
     $title = 'Plant store';
-    include('header.php');
 ?>
 <!DOCTYPE html>
 <html lang="ru">
@@ -23,6 +22,9 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <?php
+        include('header.php');
+    ?>
     <main>
         <div class="container">
             <form method='get'>
