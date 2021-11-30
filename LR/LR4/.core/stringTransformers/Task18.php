@@ -4,7 +4,7 @@
 	class Task18 implements IStringTransformer
 	{
  		private $paragraphRegex = '/(<p>[\s\S]*?<\/p>)/u';
- 		private $wordRegex = '/\b\w+(-\w+)?\b/u';
+ 		private $wordRegex = '/\b\w+(-\w+)?\b/ui';
 		private $countWordForMark = 3;
 		private $markFormat = '<span style="background-color: #ffffaa">%s</span>';
 
@@ -12,30 +12,25 @@
 		{
 			$matches = null;
 			$matches_count = preg_match_all($this->paragraphRegex, $inputText, $matches);
+			$matches = $matches[0];
 			
 			if ($matches_count === false)
 			{
 				return null;
 			}
 
-			$paragraphsContent = array();
-			foreach ($matches[0] as &$match)
-			{
-				$paragraphsContent[] = mb_substr($match, 3, -4);
-			}
-
-			return $paragraphsContent;
+			return $matches;
 		}
 
 		private function markWordInString($str, $word)
 		{
-			return str_replace($word, sprintf($this->markFormat, $word), $str);
+			return preg_replace('/\b' . $word . '\b/ui', sprintf($this->markFormat, $word), $str);
 		}
 
-		private function markRepetitonOfWordsInParagraph($content)
+		private function getWordsToMark($content)
 		{
 			$words = null;
-			$words_count = preg_match_all($this->wordRegex, $content, $words);
+			$words_count = preg_match_all($this->wordRegex, strip_tags($content), $words);
 			$words = $words[0];
 
 			if($words_count === false)
@@ -56,21 +51,33 @@
 				}
 			}
 
-			$markedContent = null;
+			$markedWords = null;
 			foreach ($words_counter as $word => $count)
 			{
 				if($count >= $this->countWordForMark)
 				{
-					if(is_null($markedContent))
-					{
-						$markedContent = $content;
-					}
-
-					$markedContent = $this->markWordInString($markedContent, $word);
+					$markedWords[] = $word;
 				}
 			}
 
-			return $markedContent;
+			return $markedWords;
+		}
+
+		private function markRepetitonOfWordsInParagraph($content)
+		{
+			$words = $this->getWordsToMark($content);
+
+			if(!$words)
+			{
+				return null;
+			}
+
+			foreach($words as &$word)
+			{
+				$content = $this->markWordInString($content, $word);
+			}
+
+			return $content;
 		}
 
 		private function markRepetitonOfWords($paragraphsContent)
@@ -94,9 +101,9 @@
 			$paragraphsContent = $this->getParagraphsContent($inputText);
 
 			$markedReperion = $this->markRepetitonOfWords($paragraphsContent);
-			$sortKey = array_map('strlen', array_keys($markedReperion));
-			array_multisort($markedReperion, SORT_NUMERIC, $sortKey);
-			$markedReperion = array_reverse($markedReperion);
+			//$sortKey = array_map('strlen', array_keys($markedReperion));
+			//array_multisort($markedReperion, SORT_NUMERIC, $sortKey);
+			//$markedReperion = array_reverse($markedReperion);
 
 			foreach ($markedReperion as $search => $replace)
 			{

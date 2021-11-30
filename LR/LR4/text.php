@@ -1,20 +1,28 @@
 <?php
     require_once($_SERVER['DOCUMENT_ROOT'] . '/LR4/.core/stringTransformers/index.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/LR4/.core/tableOfContents/index.php');
+    require_once($_SERVER['DOCUMENT_ROOT'] . '/LR4/.core/lab4Presets.php');
     
     $title = 'Plant store';
 
     $stringTransformers = getStringTransformers();
-    $tocc = new TableOfContentsConstructor();
+
     $replacedText = null;
+    $tableOfContents = null;
     if(isset($_POST['inputText']))
     {
         $replacedText = $_POST['inputText'];
+
+        $tableOfContents = (new TableOfContentsCreator())->create($replacedText);
+        if($tableOfContents)
+        {
+            $replacedText = $tableOfContents->getTextWithLinks();
+        }
+
         foreach ($stringTransformers as &$stringTransformer)
         {
             $replacedText = $stringTransformer->replace($replacedText);
         }
-
-        $tocc->construct($replacedText);
     }
     
 ?>
@@ -37,9 +45,25 @@
     ?>
     <main>
         <form method="post">
+            <div class="my-3 d-grid gap-2 col-6 mx-auto">
+                <?php 
+                    if(isset($_POST['inputText']) && $tableOfContents) 
+                    {
+                        echo($tableOfContents->getTableOfContentsView());
+                    }
+                ?>
+            </div>
             <div class="my-3 d-grid gap-2 col-6 mx-auto">            
                 <textarea class="form-control" placeholder="Введите текст" 
-                    name="inputText"><?php if(isset($_POST['inputText'])){ echo htmlspecialchars($_POST['inputText']); }?></textarea>
+                    name="inputText"><?php 
+                        if(isset($_POST['inputText'])){ 
+                            echo htmlspecialchars($_POST['inputText']); 
+                        }
+                        elseif(isset($_GET['preset']))
+                        {
+                            echo htmlspecialchars(getPresets()[$_GET['preset']]); 
+                        }
+                    ?></textarea>
                 <button type="submit" class="btn btn-primary btn-warning" name="reg">Отправить</button>            
             </div>
             <div class="my-3 d-grid gap-2 col-6 mx-auto">
